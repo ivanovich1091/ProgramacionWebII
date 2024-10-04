@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="grid column-gap-3">
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary barra-nav">
+        <div class="container-fluid bg-success p-2">
+          <a class="navbar-brand" href="#">Musicasa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sucursales
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">La Paz</a></li>
+                  <li><a class="dropdown-item" href="#">Cochabamba</a></li>
+                  <li><a class="dropdown-item" href="#">Santa Cruz</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- seccion principal -->
+    <div class="row grid bg-success-subtle principal border border-success">
+        <div class="border col-3 border border-success">
+            <figure class="figure">
+                <img src="./images/tienda1.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Sucursal La Paz</figcaption>
+            </figure>
+        </div>
+
+        <div class="border col-6 border border-success">
+            <h1>MUSICASA</h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cupiditate, reiciendis exercitationem neque, esse quaerat pariatur quis consequatur nihil voluptate culpa nesciunt tenetur ipsa consequuntur recusandae qui voluptas aliquid modi.</P>
+        </div>
+
+        <div class="border col-3 border border-success">
+            <figure class="figure"></figure>
+                <img src="./images/bateria.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Sucursal La Paz</figcaption>
+            </figure>
+        </div>
+    </div>
+    <!-- seccion principal -->
+
+    <!-- seccion ultima-->
+    <div class="row grid final border border-success border border-primary">
+        <div class="border col-8 border border-primary info-part bg-transparent text-light">
+            <table class="table bg-transparent">
+                <thead>
+                  <tr>
+                    <th scope="col" class="bg-transparent text-light">#</th>
+                    <th scope="col" class="bg-transparent text-light">Marca</th>
+                    <th scope="col" class="bg-transparent text-light">Modelo</th>
+                    <th scope="col" class="bg-transparent text-light">Disponibilidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="bg-transparent text-light">1</th>
+                    <td class="bg-transparent text-light">Yamaha</td>
+                    <td class="bg-transparent text-light">Clavinova</td>
+                    <td class="bg-transparent text-light">
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                La Paz
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Cochabamba
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                Santa Cruz
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            
+                            </div>
+                        </div>         
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="bg-transparent text-light">2</th>
+                    <td class="bg-transparent text-light">Roland</td>
+                    <td class="bg-transparent text-light">Xps 30</td>
+                    <td class="bg-transparent text-light">
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                La Paz
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Cochabamba
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                Santa Cruz
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="bg-transparent text-light">3</th>
+                    <td class="bg-transparent text-light">Korg</td>
+                    <td class="bg-transparent text-light">Kross</td>
+                    <td class="bg-transparent text-light">
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                La Paz
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Cochabamba
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                Santa Cruz
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Piano en sucursal La paz</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Este piano esta disponible en esta ciudad, puede pasar cuando quiera, nos encontramos en la calle Eloy Salmon #795
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="border col-4 border border-primary">
+            <figure class="figure"></figure>
+                <img src="./images/piano.jpg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Sucursal La Paz</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- seccion ultima -->
+
+    </div>
+
+    <script defer src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
